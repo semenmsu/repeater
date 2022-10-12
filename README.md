@@ -10,6 +10,9 @@
 - make
 - use g++-12 
 
+### Source
+- main.cpp
+
 ### cmd
 ```bash
 ./repeater -l 15001 -p 15501,15502,15003
