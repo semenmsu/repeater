@@ -128,6 +128,11 @@ int main(int argc, char** argv) {
         int numbytes = recvfrom(sockfd, (char *)buffer, BUFSIZE,  
                     0, (struct sockaddr *) &servaddr, 
                     (socklen_t*)&len); 
+
+        if (numbytes < 0) {
+            perror("receive");
+            exit(-1);
+        }
         buffer[numbytes] = '\0'; 
         printf("Server : %s\n", buffer); 
 
