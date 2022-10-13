@@ -8,7 +8,8 @@
 
 ### How to compile
 - make
-- use g++-12 
+- used g++-12 inside
+- make CC=g++ (если хочется укзать конкретный компилятор) 
 
 ### Source
 - main.cpp
