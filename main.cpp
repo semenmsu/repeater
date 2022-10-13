@@ -13,7 +13,7 @@
 #include <ctime>
 #include <vector>
 
-#define BUFSIZE 1024
+#define BUFSIZE 65000
 #define PORT 15001
 
 void error(char *msg) {
